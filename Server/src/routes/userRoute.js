@@ -25,6 +25,17 @@ router.patch('/updateMyPassword', requireSignIn, updatePassword)
 router.patch('/updateMe', requireSignIn, updateMe)
 router.delete('/deleteMe', requireSignIn, deleteMe)
 router.get('/:id/verify/:token', verifyEmail)
+router.get("/", (request, response) => {
+    return response.send(`
+        <br />
+        <br />
+        <center>
+            <h1>
+                Hello 👋 from AWS EC2
+            </h1>
+        </center>
+    `);
+});
 
 // user route
 router.route('/').get(requireSignIn, getAlluser)
