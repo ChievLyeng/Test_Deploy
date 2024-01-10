@@ -25,7 +25,7 @@ router.patch('/updateMyPassword', requireSignIn, updatePassword)
 router.patch('/updateMe', requireSignIn, updateMe)
 router.delete('/deleteMe', requireSignIn, deleteMe)
 router.get('/:id/verify/:token', verifyEmail)
-router.get("/", (request, response) => {
+router.get("/test", (request, response) => {
     return response.send(`
         <br />
         <br />
