@@ -18,7 +18,7 @@ export const useForgotPassword = () => {
     setSuccess(false);
 
     try {
-      const url = `http://localhost:${PORT}/api/v1/users/forgotpassword`;
+      const url = `http://3.26.96.202:${PORT}/api/v1/users/forgotpassword`;
 
       const response = await axios.post(
         url,

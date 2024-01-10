@@ -19,7 +19,7 @@ export const useResetPassword = () => {
     setSingleError(null);
 
     try {
-      const url = `http://localhost:${PORT}/api/v1/users/resetPassword/${token}`;
+      const url = `http://3.26.96.202:${PORT}/api/v1/users/resetPassword/${token}`;
       console.log("url", url);
 
       const response = await axios.patch(

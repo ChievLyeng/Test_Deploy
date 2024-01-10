@@ -13,7 +13,7 @@ export const useLogin = () => {
     setError(null);
 
     try {
-      const url = `http://localhost:${PORT}/api/v1/users/login`;
+      const url = `http://3.26.96.202:3000/api/v1/users/login`;
 
       const response = await axios.post(url, {email, password}, { withCredentials: true });
 
