@@ -17,7 +17,7 @@ export const useSignup = () => {
     setSingleError(null);
 
     try {
-      const url = `http://3.26.96.202:${PORT}/api/v1/users/register`;
+      const url = `http://3.107.17.15:${PORT}/api/v1/users/register`;
 
 
       const response = await axios.post(
